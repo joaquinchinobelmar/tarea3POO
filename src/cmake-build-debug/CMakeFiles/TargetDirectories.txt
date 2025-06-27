@@ -1,0 +1,5 @@
+C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir
+C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/CMakeFiles/Tarea3_PubSubSimulator_Etapa1_autogen_timestamp_deps.dir
+C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/CMakeFiles/Tarea3_PubSubSimulator_Etapa1_autogen.dir
