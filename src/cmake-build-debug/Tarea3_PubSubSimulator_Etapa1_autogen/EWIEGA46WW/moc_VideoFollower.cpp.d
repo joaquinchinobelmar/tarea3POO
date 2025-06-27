@@ -366,6 +366,13 @@ C:/Users/CHINO\ CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debu
   C:/Qt/6.9.1/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.9.1/mingw_64/include/QtMultimedia/QMediaPlayer \
+  C:/Qt/6.9.1/mingw_64/include/QtMultimedia/qaudio.h \
+  C:/Qt/6.9.1/mingw_64/include/QtMultimedia/qmediaplayer.h \
+  C:/Qt/6.9.1/mingw_64/include/QtMultimedia/qtaudio.h \
+  C:/Qt/6.9.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+  C:/Qt/6.9.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+  C:/Qt/6.9.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget \
