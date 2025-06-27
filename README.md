@@ -1,4 +1,4 @@
-# Tarea 2 Programación Orientada a Objetos
+# Tarea 3 Programación Orientada a Objetos
 
 Integrantes: Benjamin Arias Vega	202230007-8
 
