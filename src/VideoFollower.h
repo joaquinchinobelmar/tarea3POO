@@ -6,10 +6,16 @@
 #include <QLabel>
 #include "Subscriber.h"
 #include <QMediaPlayer>
+#include <QVideoWidget>
+#include <QAudioOutput>
 class QVideoWidget;
 class QAudioOutput;
 
-// Widget que se suscribe a un topico de video y muestra la última URL en un botón
+
+//para la etapa 4.4 con respecto a la 4.2 el codigo tiene cambios incompletos, como mencione se me olvido commitear la 4.3 al repo
+
+
+
 class VideoFollower : public QWidget, public Subscriber {
     Q_OBJECT
 
@@ -17,12 +23,11 @@ public:
     VideoFollower(const std::string& name, const std::string& topic, QWidget *parent = nullptr);
     ~VideoFollower() override;
 
-    // Implementación del método virtual puro de Subscriber
+
     void update(const std::string& message) override;
 
 
 private slots:
-    // Slot que se ejecutará cuando se presione el botón
     void onVideoButtonClicked();
 
 private:

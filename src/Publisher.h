@@ -3,17 +3,20 @@
 
 #include "Component.h"
 #include "Broker.h"
+#include "Topic.h"
 
-class Publisher : public virtual Component {
+class Publisher : public Component {
 public:
-    void publishNewEvent(const std::string& message);
 
-protected:
-    Publisher(const std::string& name, Broker& broker, const std::string& topicName);
+    Publisher(const std::string& name,
+              Broker& broker,
+              const std::string& topicName);
+
+    void publishNewEvent(const std::string& message);
     Topic* getTopic() const;
 
 private:
     Topic* topic;
 };
 
-#endif //PUBLISHER_H
+#endif

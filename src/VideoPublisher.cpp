@@ -1,14 +1,17 @@
 #include "VideoPublisher.h"
 #include <QHBoxLayout>
+#include <QLabel>
+#include <QLineEdit>
 
-VideoPublisher::VideoPublisher(const std::string& name, Broker& broker, const std::string& topic, QWidget *parent)
-        : Component(name, topic),
-          QWidget(parent),
-          Publisher(name, broker, topic) {
-
-    // Crear la interfaz de usuario
+VideoPublisher::VideoPublisher(const std::string& name,
+                               Broker& broker,
+                               const std::string& topicName,
+                               QWidget* parent)
+    : QWidget(parent),                // inicializa el widget base
+    Publisher(name, broker, topicName) // inicializa el Publisher (que a su vez construye Component)
+{
     auto* layout = new QHBoxLayout(this);
-    nameLabel = new QLabel(QString::fromStdString(name + " (" + topic + "): "), this);
+    nameLabel = new QLabel(QString::fromStdString(name + " (" + topicName + "): "), this);
     urlField = new QLineEdit(this);
     urlField->setPlaceholderText("Ingrese URL del video y presione Enter");
 
@@ -16,14 +19,19 @@ VideoPublisher::VideoPublisher(const std::string& name, Broker& broker, const st
     layout->addWidget(urlField);
     setLayout(layout);
 
-    // Conecta la señal 'returnPressed' (con Enter) del QLineEdit a nuestro slot de onUrlEntered
-    connect(urlField, &QLineEdit::returnPressed, this, &VideoPublisher::onUrlEntered);
+    connect(urlField, &QLineEdit::returnPressed,
+            this, &VideoPublisher::onUrlEntered);
 }
 
 void VideoPublisher::onUrlEntered() {
-    std::string url = urlField->text().toStdString();
+    const auto url = urlField->text().toStdString();
     if (!url.empty()) {
-        publishNewEvent(url); // Publica el evento
-        urlField->clear(); // Limpia el campo de texto
+        emit videoURLPublished(url);
+
+
+
+        //publishNewEvent(url);
+        //urlField->clear();
     }
+    urlField->clear();
 }
