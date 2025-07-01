@@ -37,3 +37,19 @@
 6634	13683	7730522479665856	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/GPSCarPublisher.cpp.obj	647d30894b23ccbf
 12510	17557	7730522518374950	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp.obj	fbedb3a68e702b8e
 17557	18422	7730522526955772	Tarea3_PubSubSimulator_Etapa1.exe	7553bb64a3da4b32
+15	4722	7730541614141258	Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
+15	4722	7730541614141258	Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
+15	4722	7730541614141258	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
+15	4722	7730541614141258	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
+4748	5836	7730541626504482	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Component.cpp.obj	73e4708eb4937a94
+4737	6074	7730541628894453	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Topic.cpp.obj	46d5942466975099
+4742	6387	7730541631819694	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Publisher.cpp.obj	eedd92d39bde457b
+4723	6434	7730541632279674	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Broker.cpp.obj	10ce2e8e2da510ea
+5837	14032	7730541708411902	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoPublisher.cpp.obj	42d5d5a308e15c79
+4732	14168	7730541709801927	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/main.cpp.obj	dc97f4594c02098b
+6074	14173	7730541709851944	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoFollower.cpp.obj	d79bd5e83eec1b64
+4728	14460	7730541712636567	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Stage1.cpp.obj	7cf1eadad1151809
+6434	14648	7730541714627476	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/CarTracker.cpp.obj	844b869b827fa1a3
+6387	15177	7730541719903145	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/GPSCarPublisher.cpp.obj	647d30894b23ccbf
+14033	19392	7730541762084669	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp.obj	fbedb3a68e702b8e
+19393	19925	7730541767260616	Tarea3_PubSubSimulator_Etapa1.exe	7553bb64a3da4b32

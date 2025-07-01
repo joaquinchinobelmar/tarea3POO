@@ -3,6 +3,8 @@
 #include <QUrl>
 #include <QVideoWidget>
 #include <QAudioOutput>
+#include <QSlider>
+#include <QLabel>
 
 VideoFollower::VideoFollower(const std::string& name, const std::string& topic, QWidget *parent)
         : Component(name, topic),
@@ -10,7 +12,8 @@ VideoFollower::VideoFollower(const std::string& name, const std::string& topic, 
           Subscriber(name, topic),
           mediaPlayer(nullptr),
           videoWidget(nullptr),
-          audioOutput(nullptr)
+          audioOutput(nullptr),
+          volumeSlider(nullptr)
 {
     auto* layout = new QHBoxLayout(this);
     nameLabel = new QLabel(QString::fromStdString(getName() + " (" + getTopicName() + "): "), this);
@@ -25,9 +28,7 @@ VideoFollower::VideoFollower(const std::string& name, const std::string& topic, 
 }
 
 VideoFollower::~VideoFollower() {
-    delete mediaPlayer;
     delete videoWidget;
-    delete audioOutput;
 }
 
 void VideoFollower::update(const std::string& message) {
@@ -47,23 +48,57 @@ void VideoFollower::onVideoButtonClicked() {
         return; // No hacer nada si no hay URL
     }
 
-    if (!mediaPlayer) {
-        mediaPlayer = new QMediaPlayer(this);
-        audioOutput = new QAudioOutput(this);
+    if (!videoWidget) {
+        mediaPlayer = new QMediaPlayer();
+        audioOutput = new QAudioOutput();
         videoWidget = new QVideoWidget();
 
         mediaPlayer->setAudioOutput(audioOutput);
         mediaPlayer->setVideoOutput(videoWidget);
+
+        // Slider de Volumen
+        volumeSlider = new QSlider(Qt::Horizontal); // Slider horizontal
+        volumeSlider->setRange(0, 100); // Rango de 0 a 100 para el slider
+        volumeSlider->setValue(80);    // Valor inicial (corresponde a 0.8)
+
+        connect(volumeSlider, &QSlider::valueChanged, this, [this](int value) {
+            if (audioOutput) {
+                audioOutput->setVolume(static_cast<float>(value) / 100.0f);
+            }
+        });
+
+        auto* playerLayout = new QVBoxLayout();
+        auto* controlsLayout = new QHBoxLayout();
+
+        controlsLayout->addWidget(new QLabel("Volumen:"));
+        controlsLayout->addWidget(volumeSlider);
+
+        playerLayout->addWidget(videoWidget);
+        playerLayout->addLayout(controlsLayout);
+
+        auto* containerWidget = new QWidget();
+        containerWidget->setLayout(playerLayout);
+
+        containerWidget->setAttribute(Qt::WA_DeleteOnClose);
+
+        connect(containerWidget, &QWidget::destroyed, this, [this]() {
+            videoWidget = nullptr;
+            mediaPlayer = nullptr;
+            audioOutput = nullptr;
+            volumeSlider = nullptr;
+        });
+
+        containerWidget->setWindowTitle("Reproductor de Video - " + QString::fromStdString(getName()));
+        containerWidget->resize(800, 600);
+        containerWidget->show();
     }
 
-    // Asignamos la URL al reproductor
     mediaPlayer->setSource(QUrl(QString::fromStdString(lastUrl)));
-    audioOutput->setVolume(0.8); // Volumen de 0.0 a 1.0
-
-    // Configuración para mostrar la ventana del video
-    videoWidget->setWindowTitle("Reproductor de Video - " + QString::fromStdString(getName()));
-    videoWidget->resize(800, 600);
-    videoWidget->show();
-
+    audioOutput->setVolume(static_cast<float>(volumeSlider->value()) / 100.0f);
     mediaPlayer->play();
+    
+    if (videoWidget && videoWidget->window()) {
+        videoWidget->window()->raise();
+        videoWidget->window()->activateWindow();
+    }
 }
