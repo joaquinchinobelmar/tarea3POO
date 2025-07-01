@@ -10,8 +10,6 @@ set(CMAKE_AUTOUIC ON)
 
 # Encuentra las bibliotecas de Qt6 y las nuevas para la reproducción de multimedia
 find_package(Qt6 COMPONENTS Widgets Multimedia MultimediaWidgets REQUIRED)
-find_package(Qt6 REQUIRED COMPONENTS Core)
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 # Añade todos tus archivos fuente y de encabezado al ejecutable
 add_executable(Tarea3_PubSubSimulator_Etapa1
@@ -24,11 +22,12 @@ add_executable(Tarea3_PubSubSimulator_Etapa1
         Subscriber.h
         VideoPublisher.h VideoPublisher.cpp
         VideoFollower.h VideoFollower.cpp
-        gpscarpublisher.h gpscarpublisher.cpp
-        gpscarsubscriber.h gpscarsubscriber.cpp
+        GPSCarPublisher.h GPSCarPublisher.cpp
+        CarTracker.h CarTracker.cpp
+        CarTracker.h
+        CarTracker.cpp
+        GPSCarPublisher.h
+        GPSCarPublisher.cpp
 )
-
 # Modificado para enlazar las bibliotecas QT (incluyendo las nuevas) al ejecutable
 target_link_libraries(Tarea3_PubSubSimulator_Etapa1 PRIVATE Qt6::Widgets Qt6::Multimedia Qt6::MultimediaWidgets)
-target_link_libraries(Tarea3_PubSubSimulator_Etapa1 PRIVATE Qt6::Core)
-target_link_libraries(Tarea3_PubSubSimulator_Etapa1 PRIVATE Qt6::Widgets)

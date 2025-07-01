@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_Tarea3_PubSubSimulator_Etapa1_FILE /Users/benjamin/Desktop/tarea3poo/tarea3POO/src/build/Qt_6_9_1_for_macOS-Debug/Tarea3_PubSubSimulator_Etapa1)
-set(__QT_DEPLOY_TARGET_Tarea3_PubSubSimulator_Etapa1_TYPE EXECUTABLE)

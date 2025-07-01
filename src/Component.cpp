@@ -1,5 +1,5 @@
 #include "Component.h"
-#include <utility> // Necesario para std::move
+#include <utility>
 
 Component::Component(std::string componentName, std::string topicName)
         : name(std::move(componentName)), topicName(std::move(topicName)) {}

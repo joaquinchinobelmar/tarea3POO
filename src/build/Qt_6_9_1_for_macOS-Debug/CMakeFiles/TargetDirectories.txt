@@ -1,5 +1,0 @@
-/Users/benjamin/Desktop/tarea3poo/tarea3POO/src/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir
-/Users/benjamin/Desktop/tarea3poo/tarea3POO/src/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/edit_cache.dir
-/Users/benjamin/Desktop/tarea3poo/tarea3POO/src/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
-/Users/benjamin/Desktop/tarea3poo/tarea3POO/src/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/Tarea3_PubSubSimulator_Etapa1_autogen_timestamp_deps.dir
-/Users/benjamin/Desktop/tarea3poo/tarea3POO/src/build/Qt_6_9_1_for_macOS-Debug/CMakeFiles/Tarea3_PubSubSimulator_Etapa1_autogen.dir

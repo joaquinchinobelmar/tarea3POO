@@ -1,39 +1,41 @@
 #ifndef GPSCARPUBLISHER_H
 #define GPSCARPUBLISHER_H
 
-#include "Publisher.h"
-#include <QObject>
+#include <QWidget>
+#include <QLabel>
 #include <QTimer>
-#include <QString>
-#include <QVector>
+#include "Publisher.h"
+#include <QFile>
+#include <QTextStream>
 
-
-
-
-struct GPSPosition {
-    int time;
-    float x, y;
-};
-
-class GPSCarPublisher : public QObject, public Publisher{
-    Q_OBJECT
+// Publicador que simula un GPS
+class GPSCarPublisher : public QWidget, public Publisher {
+Q_OBJECT
 
 public:
-    GPSCarPublisher(const QString& name, const QString& topicName, Broker& broker);
-    void loadPositionsFromFile(const QString& filePath);
+    GPSCarPublisher(const std::string& name, Broker& broker, const std::string& topic, QWidget *parent = nullptr);
+    ~GPSCarPublisher() override;
 
-signals:
-    void positionPublished(int time, float x, float y);
-
+    // Inicia el proceso de lectura de archivo y la temporización.
+    bool loadFileAndStart(const QString& filePath);
 
 private slots:
-    void publishNextPosition();
+    void reportPosition();
 
 private:
-    QTimer timer;
-    QVector<GPSPosition> positions;
-    int currentIndex;
-    float timeAccumulator;
+    bool readNextPointFromFile();
+
+    QLabel* gpsDataLabel;
+    QTimer* timer;
+
+    QFile dataFile;
+    QTextStream fileStream;
+
+    double prevTime = 0, currentTime = 0, nextTime = 0;
+    double prevX = 0, nextX = 0;
+    double prevY = 0, nextY = 0;
+
+    bool secondDataPointAvailable = false;
 };
 
-#endif
+#endif //GPSCARPUBLISHER_H

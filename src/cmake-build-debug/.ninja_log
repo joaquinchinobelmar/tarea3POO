@@ -1,21 +1,39 @@
 # ninja log v5
 773	1006	7727185926320526	src.exe	c00947d940f62e8
-5107	10346	7727239025821012	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoFollower.cpp.obj	d79bd5e83eec1b64
-11	894	7727239965152822	build.ninja	1020873a9173dd3d
-4123	9777	7727239020131798	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Stage1.cpp.obj	7cf1eadad1151809
-10	4115	7727238962639965	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
-10	4115	7727238962639965	Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
-10	4115	7727238962639965	Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
-10708	11103	7727239033309024	Tarea3_PubSubSimulator_Etapa1.exe	3c8e07ca9187cf6d
-4920	6176	7727238984148753	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Publisher.cpp.obj	eedd92d39bde457b
-10	4115	7727238962639965	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
-4127	5464	7727238977009068	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Broker.cpp.obj	10ce2e8e2da510ea
-4119	9913	7727239021511832	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/main.cpp.obj	dc97f4594c02098b
-4137	4919	7727238971571096	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Component.cpp.obj	73e4708eb4937a94
-4115	5107	7727238973451964	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Topic.cpp.obj	46d5942466975099
-5465	10707	7727239029451106	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp.obj	fbedb3a68e702b8e
-4132	9669	7727239019039316	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoPublisher.cpp.obj	42d5d5a308e15c79
-27	310	7727240007783387	Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
-27	310	7727240007783387	Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
+7899	14338	7727735503103013	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoFollower.cpp.obj	422fc509e11a1f5f
+11	894	7730522312114239	build.ninja	1020873a9173dd3d
 27	310	7727240007783387	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
+416	6263	7727764312017103	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Stage1.cpp.obj	94d28d78b16340a3
+33	389	7727764252930241	Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	ec4f10271d6272c3
+33	389	7727764252930241	Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	ec4f10271d6272c3
+6264	6753	7727764316770743	Tarea3_PubSubSimulator_Etapa1.exe	7553bb64a3da4b32
+4083	8930	7727741658858133	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/CarTracker.cpp.obj	156cece0c66e8a7c
+6499	7899	7727735438656124	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Publisher.cpp.obj	febf17fcbb4cacf2
 27	310	7727240007783387	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
+5506	7043	7727735430052181	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Broker.cpp.obj	9a28c1ac2c7c278
+21	279	7727725428674786	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO4.3/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	d4e39c6c30f0d4a8
+421	6173	7727764311117088	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/main.cpp.obj	9070281edb26e323
+5528	6499	7727735424704342	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Component.cpp.obj	5984f7e894c6a37a
+5517	6689	7727735426524304	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Topic.cpp.obj	e98353dae8fe10b0
+4088	9493	7727741664500393	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp.obj	ee153db4db5f2a0b
+5522	12518	7727735484853017	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoPublisher.cpp.obj	fa7f10258748e697
+33	389	7727764252930241	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO4.4/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	ec4f10271d6272c3
+21	279	7727725428674786	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO4.3/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	d4e39c6c30f0d4a8
+6689	14296	7727735502652998	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/GPSCarPublisher.cpp.obj	d3cd5a6943f2092e
+33	389	7727764252930241	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO4.4/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	ec4f10271d6272c3
+10	5259	7730522394375732	Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
+10	5259	7730522394375732	Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
+10	5259	7730522394375732	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/timestamp	63451e76bddc6c19
+10	5259	7730522394375732	C:/Users/CHINO CHINOSO/Documents/Informatica/POO/tarea3POO/src/cmake-build-debug/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp	63451e76bddc6c19
+5282	6179	7730522404636173	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Component.cpp.obj	73e4708eb4937a94
+5272	6345	7730522406286173	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Topic.cpp.obj	46d5942466975099
+5276	6634	7730522409170559	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Publisher.cpp.obj	eedd92d39bde457b
+5259	6719	7730522410020444	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Broker.cpp.obj	10ce2e8e2da510ea
+6179	12510	7730522467876860	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoFollower.cpp.obj	d79bd5e83eec1b64
+6345	12895	7730522471756720	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/VideoPublisher.cpp.obj	42d5d5a308e15c79
+5263	12926	7730522472056664	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/main.cpp.obj	dc97f4594c02098b
+5267	13206	7730522474897533	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Stage1.cpp.obj	7cf1eadad1151809
+6719	13290	7730522475729235	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/CarTracker.cpp.obj	844b869b827fa1a3
+6634	13683	7730522479665856	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/GPSCarPublisher.cpp.obj	647d30894b23ccbf
+12510	17557	7730522518374950	CMakeFiles/Tarea3_PubSubSimulator_Etapa1.dir/Tarea3_PubSubSimulator_Etapa1_autogen/mocs_compilation.cpp.obj	fbedb3a68e702b8e
+17557	18422	7730522526955772	Tarea3_PubSubSimulator_Etapa1.exe	7553bb64a3da4b32

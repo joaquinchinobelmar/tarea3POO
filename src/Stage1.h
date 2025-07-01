@@ -5,8 +5,9 @@
 #include "Broker.h"
 #include "VideoPublisher.h"
 #include "VideoFollower.h"
+#include "GPSCarPublisher.h"
+#include "CarTracker.h"
 
-// La ventana principal que contiene y organiza los widgets de la simulación
 class Stage1 : public QWidget {
     Q_OBJECT
 
@@ -18,6 +19,8 @@ private:
     Broker* broker;
     VideoPublisher* videoPublisher;
     VideoFollower* videoFollower;
+    GPSCarPublisher* gpsPublisher;
+    CarTracker* carTracker;
 };
 
 #endif //STAGE1_H

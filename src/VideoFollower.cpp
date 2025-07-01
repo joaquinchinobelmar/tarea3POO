@@ -21,8 +21,6 @@ VideoFollower::VideoFollower(const std::string& name, const std::string& topic, 
     layout->addWidget(videoButton);
     setLayout(layout);
 
-    // Conexión de la señal del botón a nuestro nuevo slot
-    // Ahora, al hacer clic en el botón, se llamará al método onVideoButtonClicked()
     connect(videoButton, &QPushButton::clicked, this, &VideoFollower::onVideoButtonClicked);
 }
 
@@ -36,7 +34,6 @@ void VideoFollower::update(const std::string& message) {
     // Guarda la URL para usarla al hacer clic
     lastUrl = message;
 
-    // Actualiza el texto del botón. Usamos QUrl para extraer solo el nombre del archivo
     QUrl url(QString::fromStdString(message));
     videoButton->setText("Ver Video: " + url.fileName());
 
@@ -53,7 +50,7 @@ void VideoFollower::onVideoButtonClicked() {
     if (!mediaPlayer) {
         mediaPlayer = new QMediaPlayer(this);
         audioOutput = new QAudioOutput(this);
-        videoWidget = new QVideoWidget(); // Sin padre para que aparezca en una nueva ventana
+        videoWidget = new QVideoWidget();
 
         mediaPlayer->setAudioOutput(audioOutput);
         mediaPlayer->setVideoOutput(videoWidget);
@@ -63,7 +60,7 @@ void VideoFollower::onVideoButtonClicked() {
     mediaPlayer->setSource(QUrl(QString::fromStdString(lastUrl)));
     audioOutput->setVolume(0.8); // Volumen de 0.0 a 1.0
 
-    // Configuramos y mostramos la ventana del video
+    // Configuración para mostrar la ventana del video
     videoWidget->setWindowTitle("Reproductor de Video - " + QString::fromStdString(getName()));
     videoWidget->resize(800, 600);
     videoWidget->show();
