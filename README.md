@@ -63,3 +63,56 @@ Ergo, debe ser la carpeta de mingw copiada anteriormente, con la subcarpeta \bin
 5. Presiona "Apply" y "Ok".
 
 Y ya puede ejecutar el programa con QT con el boton "Run".
+
+## Etapas de desarrollo
+
+El desarrollo del simulador se realizo de forma iterativa e incremental, abordando las etapas definidas en el enunciado.
+
+### Etapa 1: Publicador y Suscriptor de Video
+
+1. Se implementaron las clases base:
+    -"Component", "Broker", "Topic", "Publisher", "Subscriber"
+2. Se crearon las clases:
+    -"VideoPublisher": esta muestra un campo de texto para ingresar una URL.
+    -"VideoFollower": boton que muestra el ultimo URL publicado.
+3. El "VideoPublisher" publica el URL al presionar Enter.
+4. El boton del "VideoFollower" se actualiza con cada nueva publicación (sin reproducir aun).
+5. Se uso "Stage1.cpp" como archivo principal.
+
+### Etapa 2: Reproducción de Video
+
+1. Se completo la clase "VideoFollower" para que reaccione al boton.
+2. Al presionar el boton, se reproduce el video correspondiente usando "QMediaPlayer" y "QVideoWidget".
+3. Se utilizaron ejemplos de reproduccion proporcionados por el curso.
+
+### Etapa 3: Publicador y Suscriptor GPS
+
+1. Se implemento la clase "GPSCarPublisher", que permite:
+    -Seleccionar un archivo ".txt" con posiciones GPS usando "QFileDialog".
+    -Leer lineas del tipo "<tiempo> <x> <y>".
+    -Usar "QTimer" para enviar posiciones cada segundo.
+    -Interpolar posiciones intermedias entre dos tiempos para simular movimiento continuo.
+2. Se implemento "GPSFollower" que muestra en una ventana separada:
+    -Tiempo actual.
+    -Coordenadas "(x, y)" del movil.
+    -Texto que se actualiza en tiempo real.
+
+### Etapa 4: Funcionalidades completas
+
+1. Se integraron:
+    -Publicador de video.
+    -Publicador GPS.
+    -Ambos suscriptores en una misma interfaz (dos a la izquierda, dos a la derecha).
+2. El suscriptor GPS ahora también muestra un circulo movil usando "QPainter".
+3. El sistema opera completamente con publicacion/suscripcion por topico.
+
+### Extra-credito: Ajuste de Volumen para reproductor de Video
+
+1. Se agregó un "QSlider" debajo del boton del "VideoFollower".
+2. Permite ajustar el volumen del reproductor de video en tiempo real.
+
+## Comentarios Finales
+
+1. Se utilizaron C++ y la biblioteca Qt para GUI.
+2. El sistema fue probado en CLion con Qt 6.9.1 y ejecutado correctamente.
+3. Este archivo contiene el diagrama de clases UML solicitado en la tarea
